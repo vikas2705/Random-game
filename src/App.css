@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  width: 50px;
+  height: 100px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-game-wrapper {
+  text-align: center;
+  margin: 40px;
+}
