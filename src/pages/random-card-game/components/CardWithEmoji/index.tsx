@@ -16,7 +16,9 @@ export const CardWithEmoji = ({ card, onRevealCard }: Props) => {
     <div
       className="card"
       onClick={() => {
-        onRevealCard(number);
+        if (!revealed) {
+          onRevealCard(number);
+        }
       }}>
       {revealed ? <>{emoji}</> : <>{number}</>}
     </div>
